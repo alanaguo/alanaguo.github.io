@@ -3,10 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Page</title>
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        /* 页面容器 */
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* 导航栏 */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* 每个页面 */
+        section {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto; /* 防止超出时出现滚动条 */
+        }
+
+        /* About Me 页 */
+        .about-me {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about-me img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px 0;
+        }
+
+        .about-me h1 {
+            color: #0066cc;
+        }
+
+        /* 长简历页面样式 */
+        .resume p {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        /* 页面内容 */
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Personal Website</h1>
-    <p>This is a simple webpage hosted on GitHub Pages!</p>
+
+    <div class="container">
+        <!-- 导航栏 -->
+        <nav>
+            <a href="#about-me">About Me</a>
+            <a href="#what-i-have-done">What I Have Done</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- About Me 页面 -->
+        <section id="about-me">
+            <div class="about-me">
+                <h1>About Me</h1>
+                <img src="my-photo.jpg" alt="My Photo">
+                <div class="content">
+                    <p>Hello, I'm John Doe. I'm a passionate web developer and technology enthusiast.</p>
+                    <p>I have a strong background in computer science, specializing in full-stack development.</p>
+                    <p>When I'm not coding, I enjoy hiking, reading, and exploring new technologies.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- What I Have Done 页面 -->
+        <section id="what-i-have-done">
+            <h1>What I Have Done</h1>
+            <div class="content resume">
+                <p>Here is a brief overview of my professional journey:</p>
+                <p><strong>Software Engineer</strong> at ABC Corp (2020 - Present):</p>
+                <ul>
+                    <li>Developed and maintained web applications using React, Node.js, and MongoDB.</li>
+                    <li>Led a team of 5 developers to design and implement new features for internal software.</li>
+                    <li>Collaborated with product managers to improve user experience and functionality.</li>
+                </ul>
+                <p><strong>Junior Developer</strong> at XYZ Ltd. (2018 - 2020):</p>
+                <ul>
+                    <li>Worked on building responsive websites using HTML, CSS, and JavaScript.</li>
+                    <li>Contributed to the development of a mobile app, focusing on the user interface.</li>
+                </ul>
+                <p>In addition to my professional experience, I have contributed to several open-source projects, mainly in the areas of web development and JavaScript libraries.</p>
+            </div>
+        </section>
+
+        <!-- Contact 页面 -->
+        <section id="contact">
+            <h1>Contact</h1>
+            <div class="content">
+                <p>If you'd like to get in touch, feel free to reach out through any of the following:</p>
+                <ul>
+                    <li>Email: john.doe@example.com</li>
+                    <li>GitHub: <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
 </body>
 </html>
