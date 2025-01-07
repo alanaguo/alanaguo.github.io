@@ -6,16 +6,12 @@
     <title>My Personal Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* 全局样式 */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f7fa;
-            color: #333;
         }
-
-        /* 中心容器 */
         .container {
             width: 100%;
             max-width: 900px;
@@ -25,25 +21,23 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
-
-        /* 标题 */
-        h1, h2 {
-            color: #0066cc;
-        }
-
         h1 {
             text-align: center;
             font-size: 36px;
             margin-bottom: 20px;
+            color: #0066cc;
         }
-
-        h2 {
-            font-size: 28px;
-            margin-top: 40px;
-            margin-bottom: 15px;
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
         }
-
-        /* 欢迎信息 */
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: 600;
+        }
         .welcome {
             text-align: center;
             background-color: #0066cc;
@@ -51,131 +45,29 @@
             padding: 20px;
             border-radius: 8px;
         }
-
-        /* 个人信息 */
-        .info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .info p {
-            font-size: 18px;
-            margin: 5px 0;
-        }
-
-        /* 照片 */
-        .photo img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-
-        /* 自我介绍 */
-        .bio {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 40px;
-        }
-
-        /* 个人经历 */
-        .experience ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .experience li {
-            background-color: #f1f5f8;
-            padding: 15px;
-            border-radius: 6px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-        }
-
-        .experience li h3 {
-            color: #0066cc;
-            margin-bottom: 10px;
-            font-size: 22px;
-        }
-
-        .experience li p {
-            font-size: 16px;
-            margin: 5px 0;
-        }
-
-        /* 屏幕适配 */
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
-
-            .info {
-                margin-bottom: 20px;
-            }
-
-            .bio {
-                font-size: 16px;
-            }
+        .welcome h1 {
+            margin: 0;
         }
     </style>
 </head>
 <body>
 
-    <!-- 页面主体 -->
     <div class="container">
-
-        <!-- 欢迎信息 -->
         <div class="welcome">
             <h1>Welcome to My Personal Website!</h1>
-            <p>I'm glad you're here. Let me introduce myself!</p>
+            <p>Explore my personal information and professional experience.</p>
         </div>
 
-        <!-- 个人信息 -->
-        <div class="info">
-            <h2>Personal Information</h2>
-            <p>Name: John Doe</p>
-            <p>Age: 28</p>
-            <p>Location: New York, USA</p>
-        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="experience.html">My Experience</a>
+        </nav>
 
-        <!-- 照片 -->
-        <div class="photo">
-            <img src="my-photo.jpg" alt="My Photo">
-        </div>
-
-        <!-- 自我介绍 -->
-        <div class="bio">
-            <h2>About Me</h2>
-            <p>Hello! My name is John Doe, a web developer and technology enthusiast. I have a strong passion for creating beautiful, functional websites and applications. I specialize in full-stack development with a focus on modern web technologies like React, Node.js, and MongoDB. When I'm not coding, I love hiking, reading, and exploring new technologies.</p>
-        </div>
-
-        <!-- 个人经历 -->
-        <div class="experience">
-            <h2>My Experience</h2>
-            <ul>
-                <li>
-                    <h3>Software Engineer at ABC Corp (2020 - Present)</h3>
-                    <p>Developed and maintained web applications using React, Node.js, and MongoDB.</p>
-                    <p>Led a team of 5 developers to design and implement new features for internal software.</p>
-                    <p>Collaborated with product managers to improve user experience and functionality.</p>
-                </li>
-                <li>
-                    <h3>Junior Developer at XYZ Ltd. (2018 - 2020)</h3>
-                    <p>Worked on building responsive websites using HTML, CSS, and JavaScript.</p>
-                    <p>Contributed to the development of a mobile app, focusing on the user interface.</p>
-                </li>
-                <li>
-                    <h3>Freelance Web Developer (2017 - 2018)</h3>
-                    <p>Designed and developed custom websites for small businesses and personal projects.</p>
-                    <p>Worked directly with clients to understand their needs and deliver high-quality solutions.</p>
-                </li>
-            </ul>
-        </div>
-
+        <section>
+            <h2>Introduction</h2>
+            <p>This is the home page. You can navigate to different sections like "About Me" and "My Experience" using the menu above.</p>
+        </section>
     </div>
 
 </body>
