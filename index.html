@@ -4,133 +4,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        /* 全局样式 */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            background-color: #f4f4f4;
+            background-color: #f4f7fa;
+            color: #333;
         }
 
-        /* 页面容器 */
+        /* 中心容器 */
         .container {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
-        /* 导航栏 */
-        nav {
-            background-color: #333;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* 每个页面 */
-        section {
-            flex: 1;
-            padding: 20px;
-            overflow-y: auto; /* 防止超出时出现滚动条 */
-        }
-
-        /* About Me 页 */
-        .about-me {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .about-me img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin: 20px 0;
-        }
-
-        .about-me h1 {
+        /* 标题 */
+        h1, h2 {
             color: #0066cc;
         }
 
-        /* 长简历页面样式 */
-        .resume p {
-            line-height: 1.8;
-            font-size: 16px;
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
         }
 
-        /* 页面内容 */
-        .content {
-            max-width: 900px;
-            margin: 0 auto;
+        h2 {
+            font-size: 28px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+
+        /* 欢迎信息 */
+        .welcome {
+            text-align: center;
+            background-color: #0066cc;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* 个人信息 */
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .info p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        /* 照片 */
+        .photo img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* 自我介绍 */
+        .bio {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        /* 个人经历 */
+        .experience ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .experience li {
+            background-color: #f1f5f8;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .experience li h3 {
+            color: #0066cc;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .experience li p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        /* 屏幕适配 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .info {
+                margin-bottom: 20px;
+            }
+
+            .bio {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
 
+    <!-- 页面主体 -->
     <div class="container">
-        <!-- 导航栏 -->
-        <nav>
-            <a href="#about-me">About Me</a>
-            <a href="#what-i-have-done">What I Have Done</a>
-            <a href="#contact">Contact</a>
-        </nav>
 
-        <!-- About Me 页面 -->
-        <section id="about-me">
-            <div class="about-me">
-                <h1>About Me</h1>
-                <img src="my-photo.jpg" alt="My Photo">
-                <div class="content">
-                    <p>Hello, I'm John Doe. I'm a passionate web developer and technology enthusiast.</p>
-                    <p>I have a strong background in computer science, specializing in full-stack development.</p>
-                    <p>When I'm not coding, I enjoy hiking, reading, and exploring new technologies.</p>
-                </div>
-            </div>
-        </section>
+        <!-- 欢迎信息 -->
+        <div class="welcome">
+            <h1>Welcome to My Personal Website!</h1>
+            <p>I'm glad you're here. Let me introduce myself!</p>
+        </div>
 
-        <!-- What I Have Done 页面 -->
-        <section id="what-i-have-done">
-            <h1>What I Have Done</h1>
-            <div class="content resume">
-                <p>Here is a brief overview of my professional journey:</p>
-                <p><strong>Software Engineer</strong> at ABC Corp (2020 - Present):</p>
-                <ul>
-                    <li>Developed and maintained web applications using React, Node.js, and MongoDB.</li>
-                    <li>Led a team of 5 developers to design and implement new features for internal software.</li>
-                    <li>Collaborated with product managers to improve user experience and functionality.</li>
-                </ul>
-                <p><strong>Junior Developer</strong> at XYZ Ltd. (2018 - 2020):</p>
-                <ul>
-                    <li>Worked on building responsive websites using HTML, CSS, and JavaScript.</li>
-                    <li>Contributed to the development of a mobile app, focusing on the user interface.</li>
-                </ul>
-                <p>In addition to my professional experience, I have contributed to several open-source projects, mainly in the areas of web development and JavaScript libraries.</p>
-            </div>
-        </section>
+        <!-- 个人信息 -->
+        <div class="info">
+            <h2>Personal Information</h2>
+            <p>Name: John Doe</p>
+            <p>Age: 28</p>
+            <p>Location: New York, USA</p>
+        </div>
 
-        <!-- Contact 页面 -->
-        <section id="contact">
-            <h1>Contact</h1>
-            <div class="content">
-                <p>If you'd like to get in touch, feel free to reach out through any of the following:</p>
-                <ul>
-                    <li>Email: john.doe@example.com</li>
-                    <li>GitHub: <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></li>
-                </ul>
-            </div>
-        </section>
+        <!-- 照片 -->
+        <div class="photo">
+            <img src="my-photo.jpg" alt="My Photo">
+        </div>
+
+        <!-- 自我介绍 -->
+        <div class="bio">
+            <h2>About Me</h2>
+            <p>Hello! My name is John Doe, a web developer and technology enthusiast. I have a strong passion for creating beautiful, functional websites and applications. I specialize in full-stack development with a focus on modern web technologies like React, Node.js, and MongoDB. When I'm not coding, I love hiking, reading, and exploring new technologies.</p>
+        </div>
+
+        <!-- 个人经历 -->
+        <div class="experience">
+            <h2>My Experience</h2>
+            <ul>
+                <li>
+                    <h3>Software Engineer at ABC Corp (2020 - Present)</h3>
+                    <p>Developed and maintained web applications using React, Node.js, and MongoDB.</p>
+                    <p>Led a team of 5 developers to design and implement new features for internal software.</p>
+                    <p>Collaborated with product managers to improve user experience and functionality.</p>
+                </li>
+                <li>
+                    <h3>Junior Developer at XYZ Ltd. (2018 - 2020)</h3>
+                    <p>Worked on building responsive websites using HTML, CSS, and JavaScript.</p>
+                    <p>Contributed to the development of a mobile app, focusing on the user interface.</p>
+                </li>
+                <li>
+                    <h3>Freelance Web Developer (2017 - 2018)</h3>
+                    <p>Designed and developed custom websites for small businesses and personal projects.</p>
+                    <p>Worked directly with clients to understand their needs and deliver high-quality solutions.</p>
+                </li>
+            </ul>
+        </div>
+
     </div>
 
 </body>
