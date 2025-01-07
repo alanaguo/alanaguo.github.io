@@ -6,63 +6,147 @@
     <title>My Personal Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        /* 通用样式 */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f7fa;
+            color: #333;
+            line-height: 1.6;
         }
-        .container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 30px;
-            background-color: white;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        h1 {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #0066cc;
-        }
-        <!-- 示例导航栏代码 -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="aboutme.html">About Me</a>
-            <a href="experience.html">Life Experience</a>
-        </nav>
-        .welcome {
-            text-align: center;
+
+        header {
             background-color: #0066cc;
             color: white;
-            padding: 20px;
-            border-radius: 8px;
+            text-align: center;
+            padding: 40px 0;
         }
-        .welcome h1 {
+
+        header h1 {
             margin: 0;
+            font-size: 36px;
         }
+
+        /* 导航栏样式 */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #0066cc;
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* 内容区样式 */
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: #0066cc;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        /* 照片样式 */
+        .photo {
+            max-width: 200px;
+            border-radius: 50%;
+            margin: 20px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* 强调文本 */
+        .highlight {
+            color: #0066cc;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #0066cc;
+            color: white;
+        }
+
+        /* 平滑滚动效果 */
+        html {
+            scroll-behavior: smooth;
+        }
+
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="welcome">
-            <h1>Welcome to My Personal Page!</h1>
-            <p>Explore my personal information and professional experience.</p>
-        </div>
+    <!-- 页面头部 -->
+    <header>
+        <h1>Welcome to My Personal Website!</h1>
+        <p>Learn about my education, academic background, and experience</p>
+    </header>
 
-        <nav>
-            <a href="about.html">About Me</a>
-            <a href="experience.html">My Experience</a>
-        </nav>
+    <!-- 导航栏 -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Academic Experience</a>
+    </nav>
 
-        <section>
-            <h2>Introduction</h2>
-            <p>This is the home page. You can navigate to different sections like "About Me" and "My Experience" using the menu above.</p>
-        </section>
-    </div>
+    <!-- 关于我 -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="your-photo.jpg" alt="Your Photo" class="photo">
+        <p>Hello! My name is <span class="highlight">[Your Name]</span>. I am a passionate researcher with a keen interest in [mention your field]. My journey has been driven by a love for solving problems and contributing to the advancement of knowledge. I enjoy working with people from diverse backgrounds and believe in the power of collaboration.</p>
+    </section>
+
+    <!-- 教育背景 -->
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>PhD in [Your Field]</strong>, [University Name], [Year–Present]</li>
+            <li><strong>Master's in [Your Field]</strong>, [University Name], [Year–Year]</li>
+            <li><strong>Bachelor's in [Your Field]</strong>, [University Name], [Year–Year]</li>
+        </ul>
+        <p>I have a solid educational foundation in [mention areas]. My academic training has equipped me with the skills to tackle complex problems and engage in meaningful research.</p>
+    </section>
+
+    <!-- 学术经历 -->
+    <section id="experience">
+        <h2>Academic Experience</h2>
+        <p>Over the course of my career, I have had the privilege of working on a variety of projects in the areas of [mention your research interests]. Some of my key experiences include:</p>
+        <ul>
+            <li>Research Assistant at [University Name], working on [Project/Topic], [Year–Year]</li>
+            <li>Teaching Assistant for [Course Name], [University Name], [Year–Year]</li>
+            <li>Collaborated with [mention collaborators], resulting in [mention publication or outcome]</li>
+        </ul>
+        <p>Throughout my journey, I have had the opportunity to engage with inspiring individuals and make valuable contributions to my field of study.</p>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© [Your Name] - All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
