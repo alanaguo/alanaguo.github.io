@@ -24,11 +24,9 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
 /* top navigation bar: brand on the left, links right after it */
 .topbar{position:sticky;top:0;z-index:10;min-height:var(--bar);background:var(--bg);border-bottom:1px solid var(--rule)}
-.topbar .in{max-width:1800px;margin:0 auto;padding:0 4vw;min-height:var(--bar);display:flex;align-items:center;gap:56px}
-.brand{font:700 1.35rem/1.2 var(--sans);color:var(--muted);white-space:nowrap}
-.brand:hover{text-decoration:none;color:var(--accent)}
+.topbar .in{max-width:1800px;margin:0 auto;padding:0 4vw;min-height:var(--bar);display:flex;align-items:center;justify-content:flex-start}
 nav{min-width:0}
-.tabs{display:flex;flex-wrap:wrap;align-items:center;gap:8px 40px;list-style:none;margin:0;padding:0;font-family:var(--sans);font-size:1.15rem}
+.tabs{display:flex;flex-wrap:wrap;align-items:center;gap:8px 44px;list-style:none;margin:0;padding:0;font-family:var(--sans);font-size:1.35rem;font-weight:700}
 .tabs a{display:block;padding:6px 0;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent}
 .tabs a:hover{color:var(--accent);text-decoration:none}
 .tabs a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent)}
@@ -85,8 +83,7 @@ footer{margin-top:56px;padding-top:14px;border-top:1px solid var(--rule);color:v
   :root{--bar:0px}
   .topbar{position:static}
   .topbar .in{flex-direction:column;align-items:flex-start;gap:6px;padding:14px 20px}
-  .brand{font-size:1.2rem}
-  .tabs{gap:4px 24px;font-size:1rem}
+    .tabs{gap:4px 24px;font-size:1.1rem}
   .layout{grid-template-columns:1fr;gap:0;padding:0 20px}
   aside{position:static;height:auto;padding:28px 0 8px;display:grid;grid-template-columns:auto 1fr;column-gap:20px;align-items:center;overflow:visible}
   .photo{width:96px;height:96px;grid-row:span 2}
@@ -105,10 +102,9 @@ footer{margin-top:56px;padding-top:14px;border-top:1px solid var(--rule);color:v
 <body>
 <header class="topbar">
   <div class="in">
-    <a class="brand" href="#about">Your Name's Webpage</a>
     <nav aria-label="Sections">
       <ul class="tabs">
-        <li><a href="#about">About</a></li>
+        <li><a href="#about">Your Homepage</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#experience">Experience</a></li>
