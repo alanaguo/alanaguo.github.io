@@ -34,7 +34,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
 /* sidebar */
 aside{position:sticky;top:var(--bar);align-self:start;height:calc(100vh - var(--bar));padding:40px 0 32px;display:flex;flex-direction:column;overflow-y:auto}
-.photo{width:132px;height:132px;border-radius:50%;object-fit:cover;background:var(--thumb);display:block}
+.photo{width:200px;height:200px;border-radius:50%;object-fit:cover;background:var(--thumb);display:block}
 aside h1{font:600 1.6rem/1.2 var(--serif);margin:20px 0 6px}
 .affil{margin:0 0 18px;color:var(--muted);font-size:.95rem;line-height:1.5}
 .links{list-style:none;margin:0;padding:0;font-family:var(--sans);font-size:.9rem}
@@ -94,33 +94,39 @@ footer{margin-top:56px;padding-top:14px;border-top:1px solid var(--rule);color:v
   </aside>
 
   <main>
-    <section id="about">
+    <section id="Welcome to my homepage">
       <h2>About</h2>
       <p>Hi, I am a first-year PhD student working under the supervision of
         <a href="https://actsci.utstat.utoronto.ca/author/christopher-blier-wong/">Prof. Christopher Blier-Wong</a> and
         <a href="https://actsci.utstat.utoronto.ca/author/andrei-badescu/">Prof. Andrei Badescu</a>.
-        My research interests include general P&amp;C insurance modelling and statistical learning.</p>
+        My research interests include general P&amp;C insurance modelling and statistical learning. 
+        Prior to entering PhD studies, 
+        I completed my bacholor's and master's degree both at Wuhan University, China. 
+        Personally, I love archery (level 3 amateur archer), badminton (a left-hander), calligraphy, Taichi,
+        and I have a working knowledge of the <a href="https://en.wikipedia.org/wiki/I_Ching">I Ching</a> with Taoist theory.</p>
     </section>
 
     <section id="publications">
       <h2>Publications</h2>
       <p>
         Xiong, H., <b>Guo, Y.</b>, Coauthor B, Zitikis, R. (2026).
-        Beyond no-claims discount: a learning-embedded telematics-driven pricing system for dynamic premium adjustments.
+        <a href="https://link.springer.com/article/10.1186/s40854-026-00928-7">
+          Beyond no-claims discount: a learning-embedded telematics-driven pricing system for dynamic premium adjustments.</a>
         <em>Financial Innovation</em>, 12, 118.
-        <a href="https://link.springer.com/article/10.1186/s40854-026-00928-7">Link</a>,
-        <a href="files/paper1.pdf">PDF</a>
+
+        <h2>Manuscripts</h2>
+        To be updated
       </p>
     </section>
 
     <section id="teaching">
       <h2>Teaching</h2>
-      <p><b>Teaching assistant:</b> ACT240H1F Mathematics of Investment and Credit (Fall 2026); ACT245H1S Financial Principles for Actuarial Science I (Winter 2027).</p>
+      <p><b>Teaching assistant:</b></p>
+      <ul class="courses">
+        <li>ACT240H1F Mathematics of Investment and Credit (Fall 2026)</li>
+        <li>ACT245H1S Financial Principles for Actuarial Science I (Winter 2027)</li>
+      </ul>
     </section>
-
-    <footer>Last updated October 2026.</footer>
-  </main>
-</div>
 
 <script>
 (function(){
