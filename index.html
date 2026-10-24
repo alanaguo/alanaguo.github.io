@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <script>document.documentElement.className+=' js'</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Your Name's Webpage</title>
-<meta name="description" content="Your Name">
+<title>Welcome to my homepage</title>
+<meta name="description" content="Yuxuan Guo">
 <style>
 :root{
   --bg:#ffffff; --ink:#1f2328; --muted:#555c64; --rule:#e3e6ea; --accent:#1d4f91; --thumb:#eef1f5;
@@ -49,14 +49,6 @@ h2{font:600 1.3rem/1.3 var(--serif);margin:0 0 14px;padding-bottom:8px;border-bo
 h2::after{content:"";position:absolute;left:0;bottom:-1px;width:44px;height:2px;background:var(--accent)}
 p{margin:0 0 12px}
 ul{margin:0;padding:0;list-style:none}
-
-/* projects */
-.proj{display:grid;grid-template-columns:170px 1fr;gap:20px;margin-bottom:22px}
-.thumb{width:170px;height:106px;border-radius:6px;object-fit:cover;background:var(--thumb);border:1px solid var(--rule)}
-.proj .t{font-weight:600}
-.proj p{margin:2px 0 4px;color:var(--muted);font-size:.95rem;line-height:1.55}
-.proj .l,.pub .l{font-family:var(--sans);font-size:.85rem}
-.proj .l a,.pub .l a{margin-right:.9em}
 
 /* publications */
 .pub{margin-bottom:20px}
@@ -103,8 +95,7 @@ footer{margin-top:56px;padding-top:14px;border-top:1px solid var(--rule);color:v
   <div class="in">
     <nav aria-label="Sections">
       <ul class="tabs">
-        <li><a href="#about">Your Homepage</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">Welcome to my homepage</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#service">Teaching &amp; Service</a></li>
@@ -121,104 +112,37 @@ footer{margin-top:56px;padding-top:14px;border-top:1px solid var(--rule);color:v
     <h1>Your Name</h1>
     <p class="affil">Your Position<br>Your Department<br>Your Institution</p>
     <ul class="links">
-      <li><a href="mailto:your-email@example.com">Email</a></li>
+      <li><a href="mailto:alana.guo@mail.utoronto.ca">Email</a></li>
       <li><a href="files/cv.pdf">CV</a></li>
-      <li><a href="https://scholar.google.com/">Google Scholar</a></li>
-      <li><a href="https://github.com/your-username">GitHub</a></li>
+      <li><a href="https://scholar.google.com/citations?hl=zh-CN&user=xuwYcrQAAAAJ">Google Scholar</a></li>
+      <li><a href="https://github.com/alanaguo">GitHub</a></li>
     </ul>
   </aside>
 
   <main>
     <section id="about">
       <h2>About</h2>
-      <p>I am a PhD student working under the supervision of Prof. Advisor One and Prof. Advisor Two. My research interests include [your research area].</p>
-      <ul class="facts">
-        <li><span class="k">Campus</span><span>Your Campus</span></li>
-        <li><span class="k">Fields of Study</span><span>Your Field(s)</span></li>
-        <li><span class="k">Areas of Interest</span><span>Your Interests</span></li>
-      </ul>
+      <p>I am a first-year PhD student working under the supervision of <a href="https://actsci.utstat.utoronto.ca/author/christopher-blier-wong/">Prof. Christopher Blier-Wong</a> and <a href="https://actsci.utstat.utoronto.ca/author/andrei-badescu/">Prof. Andrei Badescu</a>. My research interests include general P\&C insurance modelling and statistical learning.</p>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <!-- Thumbnails: images/project1.png etc. (about 340 x 212 px works well) -->
-      <div class="proj">
-        <img class="thumb" src="images/project1.png" alt="Overview figure of Project One">
-        <div>
-          <div class="t">Project One: A Benchmark for Robust Text Classification</div>
-          <p>A short description of what the project does and what you built or found, in one or two sentences.</p>
-          <div class="l"><a href="https://github.com/your-username/project1">Code</a><a href="files/project1-report.pdf">Report</a></div>
-        </div>
-      </div>
-      <div class="proj">
-        <img class="thumb" src="images/project2.png" alt="Overview figure of Project Two">
-        <div>
-          <div class="t">Project Two: Efficient Fine-Tuning for Low-Resource Languages</div>
-          <p>A short description of the course or research project and its main result.</p>
-          <div class="l"><a href="https://github.com/your-username/project2">Code</a></div>
-        </div>
-      </div>
-      <div class="proj">
-        <img class="thumb" src="images/project3.png" alt="Overview figure of Project Three">
-        <div>
-          <div class="t">Project Three: Undergraduate Thesis on Question Answering</div>
-          <p>A short description of the thesis topic and approach.</p>
-          <div class="l"><a href="files/thesis.pdf">Thesis</a></div>
-        </div>
-      </div>
-    </section>
 
     <section id="publications">
       <h2>Publications</h2>
-
-      <div class="pub">
-        <div class="t">Your Paper Title: A Subtitle That Explains the Contribution</div>
-        <div class="a"><b>Your Name</b>, Coauthor A, Coauthor B, Coauthor C</div>
-        <div class="v"><em>Conference or Journal Name</em>, 2026 <span class="tag">Spotlight</span></div>
-        <div class="l">
-          <a href="files/paper1.pdf">PDF</a><a href="https://arxiv.org/abs/0000.00000">arXiv</a><a href="https://github.com/your-username/project">Code</a>
-          <details><summary>BibTeX</summary>
-<pre>@inproceedings{yourname2026paper,
-  title     = {Your Paper Title},
-  author    = {Name, Your and A, Coauthor and B, Coauthor and C, Coauthor},
-  booktitle = {Conference},
-  year      = {2026}
-}</pre></details>
-        </div>
-      </div>
-
-      <div class="pub">
-        <div class="t">Another Paper Title on Robust Language Understanding</div>
-        <div class="a">Coauthor A, <b>Your Name</b>, Coauthor C</div>
-        <div class="v"><em>Conference or Journal Name</em>, 2025</div>
-        <div class="l"><a href="files/paper2.pdf">PDF</a><a href="https://github.com/your-username/project2">Code</a><a href="files/paper2-slides.pdf">Slides</a></div>
-      </div>
-
-      <div class="pub">
-        <div class="t">A Workshop Paper on Low-Resource Learning</div>
-        <div class="a"><b>Your Name</b>, Coauthor B</div>
-        <div class="v"><em>Workshop Name</em>, 2024</div>
-        <div class="l"><a href="files/paper3.pdf">PDF</a></div>
-      </div>
-    </section>
-
-    <section id="experience">
-      <h2>Experience</h2>
-      <ul class="cv">
-        <li><span class="d">2026 – present</span><span><b>PhD in Your Field</b>, Your Institution<br>Supervisors: Prof. Advisor One and Prof. Advisor Two</span></li>
-        <li><span class="d">Summer 2026</span><span><b>Research Intern</b>, Example Research Lab</span></li>
-        <li><span class="d">2018 – 2022</span><span><b>B.S. in Your Major</b>, Sample University</span></li>
-      </ul>
-      <p style="margin-top:14px"><b>Honors:</b> Award Name (2026); Fellowship Name (2022–2026).</p>
+      <p>
+        Xiong, H., <b>Guo, Y.</b>, Coauthor B, Zitikis, R. (2026).
+        Beyond no-claims discount: a learning-embedded telematics-driven pricing system for dynamic premium adjustments.
+        <em>Financial Innovation</em>, 12, 118.
+        <a href="https://link.springer.com/article/10.1186/s40854-026-00928-7">Link</a>,
+        <a href="files/paper1.pdf">PDF</a>
+      </p>
     </section>
 
     <section id="service">
-      <h2>Teaching &amp; Service</h2>
-      <p><b>Teaching assistant:</b> Course A (Fall 2024, Fall 2025); Course B (Spring 2025).</p>
-      <p><b>Reviewing:</b> Conference A, Conference B, Conference C.</p>
+      <h2>Teaching</h2>
+      <p><b>Teaching assistant:</b> ACT240H1F Mathematics of Investment and Credit (FALL 2026); ACT245H1S Financial Principles for Actuarial Science I (Winter 2027).</p>
     </section>
 
-    <footer>&copy; <span id="y"></span> Your Name. Last updated October 2026.</footer>
+    <footer></span>Last updated October 2026.</footer>
   </main>
 </div>
 <script>
